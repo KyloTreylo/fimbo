@@ -89,7 +89,7 @@ body {
     text-align:center;
     font-size:25px;
     transform:rotate(-90deg);
-    background:transparent;
+    background: rgba(0, 234, 255, 0.233);
     color:#fff;
     position:fixed;
     left:0;
@@ -107,7 +107,7 @@ body {
     text-align:center;
     font-size:25px;
     transform:rotate(90deg);
-    background:transparent;
+    background: rgba(0, 234, 255, 0.233);
     color:#fff;
     position:fixed;
     right:0;
@@ -119,7 +119,7 @@ body {
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
 }
-#contact {
+#idee {
     width:10vw;
     height:10vw;
     text-align:center;
@@ -127,8 +127,42 @@ body {
     background:transparent;
     color:#fff;
     position:fixed;
+    right:60vh;
+    bottom:70vh;
+    /* display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 0px 100px 100px; */
+}
+#contact {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    background: rgba(0, 195, 255, 0.26);
+    color:#fff;
+    position:fixed;
     bottom:0;
-    left:45vw;
+    left:55vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0px 0px;
+}
+#annunci {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    background: rgba(0, 195, 255, 0.26);
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    left:35vw;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -145,6 +179,10 @@ body {
     cursor:pointer;
 }
 #contact:hover {
+    background:#21a1f7e6;
+    cursor:pointer;
+}
+#annunci:hover {
     background:#21a1f7e6;
     cursor:pointer;
 }
@@ -165,7 +203,7 @@ body {
 }
 .social:hover { 
     cursor: pointer;
-    color:rgb(255, 50, 50);
+    color:rgb(50, 207, 255);
 }
 .container {
     width:90vw;
@@ -225,13 +263,13 @@ body {
 }
 .btn_one:hover {
     cursor:pointer;
-    color:rgb(255, 50, 50);
+    color:rgb(50, 207, 255);
     background:#fff;
 }
 .btn_two {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
-    color:rgb(255, 50, 50);
+    color:rgb(50, 207, 255);
     background:#fff;
     border:3px solid #fff;
     padding:8px 40px;
@@ -310,14 +348,14 @@ body {
     background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 50, 50); 
+    background: rgb(50, 207, 255); 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 50, 50,0.8); 
+    background: rgba(50, 197, 255, 0.8); 
 }
 ::selection {
 	color: #fff;
-	background: rgb(255, 50, 50);
+	background: rgb(50, 207, 255);
 }
 
 @media (max-width: 800px){ 
@@ -360,29 +398,22 @@ body {
     }
 }
 
-#container {
-    margin: 30px;
-    }
-    #wrapper {
-    border: 1px solid #ccc;
-    height: 320px;
+
+#wrapper {
+    border: 1px solid rgb(0, 102, 255);
+    height: 600px;
+    width: 1000px;
     margin-bottom: 10px;
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
-    width: 480px;
     }
     .slider {
     position: absolute;
     top: 0;
     left: 0;
-    height: 320px;
-    width: 1920px; /* larghezza totale */
-    }
-    .slider li {
-    float: left;
-    height: 320px;
-    width: 480px;
+    height: 800px;
+    width: 1200px;
     }
     .slider img {
     display: block;
@@ -393,8 +424,8 @@ body {
     width: 100%;
     }
     .navigation a {
-    background: #ccc;
-    color: #333;
+    background: rgb(0, 13, 133);
+    color: rgb(255, 255, 255);
     font: bold 14px arial, helvetica, sans-serif;
     display: block;
     float: left;
@@ -405,9 +436,9 @@ body {
     .navigation a:active {
     background-color: #999;
     }
-    .js-shown {
+    /* .js-shown {
     display: none !important;
-    }
+    } */
 
 
 .hasjs .js-shown {
@@ -423,3 +454,33 @@ overflow: hidden;
 -o-transition: left 0.5s ease-out;
 transition: left 0.5s ease-out;
 }
+
+#galleria{
+    width: 100%;
+}
+
+.immagine{
+    display: inline-block;
+    width: 22%;
+    margin: 10px 1%;
+}
+
+.preview{
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .immagine{
+        width: 98%;
+    }
+    }
+    @media (max-width: 720px) and (min-width: 480px){
+    .immagine{
+        width: 47%;
+    }
+    }
+    @media (max-width: 1020px) and (min-width: 720px){
+    .immagine{
+        width: 30%;
+    }
+    }

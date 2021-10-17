@@ -40,6 +40,20 @@ function closecontact(){
         $("#contact_container").css("display","none");
     },800);
 }
+function showannunci(){
+    $("#annunci_container").css("display","inherit");
+    $("#annunci_container").addClass("animated slideInUp");
+    setTimeout(function(){
+        $("#annunci_container").removeClass("animated slideInUp");
+    },800);
+}
+function closeannunci(){
+    $("#annunci_container").addClass("animated slideOutDown");
+    setTimeout(function(){
+        $("#annunci_container").removeClass("animated slideOutDown");
+        $("#annunci_container").css("display","none");
+    },800);
+}
 setTimeout(function(){
     $("#loading").addClass("animated fadeOut");
     setTimeout(function(){
